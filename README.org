@@ -1,5 +1,6 @@
 #+Title: Caco GIT
 
+#+export_file_name: index
 #+setupfile: ~/bin/org-themes/src/readtheorg_inline/readtheorg_inline.theme
 
 Mini curso ministrado pelo Centro Acadêmico da Computação aos alunos da UNICAMP aprofundando seus conhecimentos em =git=.
@@ -24,29 +25,29 @@ Assim, esse curso, focando nos casos de uso que julgamos serem comuns aos alunos
 
 Durante o desenvolvimento de trabalhos e projetos, é comum que seja necessário reverter certas mudanças que acabaram gerando erros ou mais problemas.
 
-#+begin_quote
-São 11 da noite de um domingo. \\
-Caco, o sapo, possui um laboratório de MC102 para entregar em uma hora.\\
-Caco, o sapo, está nervoso. Seu código não roda.\\
-"FINALMENTE!", grita Caco, o sapo, quebrando o silêncio frio da noite.\\
-Seu código roda! Cinco testes de dez.\\
-"Cinco bola dez", conforma-se Caco, o sapo.\\
+#+begin_verse
+São 11 da noite de um domingo.
+Caco, o sapo, possui um laboratório de MC102 para entregar em uma hora.
+Caco, o sapo, está nervoso. Seu código não roda.
+"FINALMENTE!", grita Caco, o sapo, quebrando o silêncio frio da noite.
+Seu código roda! Cinco testes de dez.
+"Cinco bola dez", conforma-se Caco, o sapo.
 
-30 minutos.\\
-Hora da corrida final, Caco, o sapo, ainda sonha com a bolsa FAPESP.\\
-Caco, o sapo, desesperadamente tenta os últimos testes.\\
+30 minutos.
+Hora da corrida final, Caco, o sapo, ainda sonha com a bolsa FAPESP.
+Caco, o sapo, desesperadamente tenta os últimos testes.
 
-10 minutos.\\
-Caco, o sapo, suspirando, tenta rodar mais uma vez... e nenhum caso teste é aceito.\\
+10 minutos.
+Caco, o sapo, suspirando, tenta rodar mais uma vez... e nenhum caso teste é aceito.
 
-5 minutos.\\
-Como reverter? Como voltar a trás?\\
-E se ele pudesse fazer tudo diferente?\\
-Caco, o sapo, não sabe mais como desfazer suas mudanças.\\
+5 minutos.
+Como reverter? Como voltar a trás?
+E se ele pudesse fazer tudo diferente?
+Caco, o sapo, não sabe mais como desfazer suas mudanças.
 
-Caco, o sapo, senta e observa seus últimos segundos escorrerem pelos seus dedos.\\
-Só resta-lhe abrir o site da DAC.\\
-#+end_quote
+Caco, o sapo, senta e observa seus últimos segundos escorrerem pelos seus dedos.
+Só resta-lhe abrir o site da DAC.
+#+end_verse
 
 Git é uma ferramenta que se dispõe a resolver isso via sua estrutura.
 

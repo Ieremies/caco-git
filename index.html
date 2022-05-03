@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt">
 <head>
-<!-- 2022-05-03 ter 14:31 -->
+<!-- 2022-05-03 ter 14:48 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Caco GIT</title>
@@ -219,20 +219,20 @@ $(function() {    $('.note').before("<p class='admonition-title note'>Note</p>")
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgb451690">1. Público alvo</a></li>
-<li><a href="#orgf1bb9d3">2. Objetivo</a></li>
-<li><a href="#org819e057">3. Proposta inicial</a></li>
-<li><a href="#org5d7f101">4. Casos de uso</a>
+<li><a href="#org55b64bd">1. Público alvo</a></li>
+<li><a href="#org9ad5121">2. Objetivo</a></li>
+<li><a href="#org3d73606">3. Proposta inicial</a></li>
+<li><a href="#org872643f">4. Casos de uso</a>
 <ul>
-<li><a href="#org19cdd32">4.1. Reverter o arquivo a estado anterior.</a></li>
+<li><a href="#orgcbe64ad">4.1. Reverter o arquivo a estado anterior.</a></li>
 </ul>
 </li>
-<li><a href="#orgb052291">5. Worklog</a>
+<li><a href="#orga2c0019">5. Worklog</a>
 <ul>
-<li><a href="#org3685a0a">5.1. Reunião, segunda, 02 de maio.</a></li>
+<li><a href="#orge9f14ca">5.1. Reunião, segunda, 02 de maio.</a></li>
 </ul>
 </li>
-<li><a href="#org9ec8280">6. Referências</a></li>
+<li><a href="#org82a46ca">6. Referências</a></li>
 </ul>
 </div>
 </div>
@@ -240,8 +240,8 @@ $(function() {    $('.note').before("<p class='admonition-title note'>Note</p>")
 Mini curso ministrado pelo Centro Acadêmico da Computação aos alunos da UNICAMP aprofundando seus conhecimentos em <code>git</code>.
 </p>
 
-<div id="outline-container-orgb451690" class="outline-2">
-<h2 id="orgb451690"><span class="section-number-2">1.</span> Público alvo</h2>
+<div id="outline-container-org55b64bd" class="outline-2">
+<h2 id="org55b64bd"><span class="section-number-2">1.</span> Público alvo</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Esse mini curso tem como foco o aluno de Computação em seu primeiro semestre, o tal está a cursar MC102 que exige a submissão de laboratórios de programação via GitLab.
@@ -253,8 +253,8 @@ Vale ressaltar que, apesar desse ser o nosso público alvo, o curso não está l
 </div>
 </div>
 
-<div id="outline-container-orgf1bb9d3" class="outline-2">
-<h2 id="orgf1bb9d3"><span class="section-number-2">2.</span> Objetivo</h2>
+<div id="outline-container-org9ad5121" class="outline-2">
+<h2 id="org9ad5121"><span class="section-number-2">2.</span> Objetivo</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 O curso tem como objetivo construir encima do conhecimento do aluno adquirido para submissão de laboratórios. Entende-se que, muitos desses alunos utilizam a receita pronta disponibilizada pelos professores e monitores e que ainda faltam-lhes noções do que acontece "de baixo do pano".
@@ -265,8 +265,8 @@ Assim, esse curso, focando nos casos de uso que julgamos serem comuns aos alunos
 </p>
 </div>
 </div>
-<div id="outline-container-org819e057" class="outline-2">
-<h2 id="org819e057"><span class="section-number-2">3.</span> Proposta inicial</h2>
+<div id="outline-container-org3d73606" class="outline-2">
+<h2 id="org3d73606"><span class="section-number-2">3.</span> Proposta inicial</h2>
 <div class="outline-text-2" id="text-3">
 <dl class="org-dl">
 <dt>Data</dt><dd>Semana do dia 16 de Maio (semana seguinte ao Install Fest de Linux do LKCamp)</dd>
@@ -277,50 +277,40 @@ Assim, esse curso, focando nos casos de uso que julgamos serem comuns aos alunos
 </div>
 </div>
 
-<div id="outline-container-org5d7f101" class="outline-2">
-<h2 id="org5d7f101"><span class="section-number-2">4.</span> Casos de uso</h2>
+<div id="outline-container-org872643f" class="outline-2">
+<h2 id="org872643f"><span class="section-number-2">4.</span> Casos de uso</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org19cdd32" class="outline-3">
-<h3 id="org19cdd32"><span class="section-number-3">4.1.</span> Reverter o arquivo a estado anterior.</h3>
+<div id="outline-container-orgcbe64ad" class="outline-3">
+<h3 id="orgcbe64ad"><span class="section-number-3">4.1.</span> Reverter o arquivo a estado anterior.</h3>
 <div class="outline-text-3" id="text-4-1">
 <p>
 Durante o desenvolvimento de trabalhos e projetos, é comum que seja necessário reverter certas mudanças que acabaram gerando erros ou mais problemas.
 </p>
 
-<blockquote>
-<p>
-São 11 da noite de um domingo. <br />
+<p class="verse">
+São 11 da noite de um domingo.<br />
 Caco, o sapo, possui um laboratório de MC102 para entregar em uma hora.<br />
 Caco, o sapo, está nervoso. Seu código não roda.<br />
 "FINALMENTE!", grita Caco, o sapo, quebrando o silêncio frio da noite.<br />
 Seu código roda! Cinco testes de dez.<br />
 "Cinco bola dez", conforma-se Caco, o sapo.<br />
-</p>
-
-<p>
+<br />
 30 minutos.<br />
 Hora da corrida final, Caco, o sapo, ainda sonha com a bolsa FAPESP.<br />
 Caco, o sapo, desesperadamente tenta os últimos testes.<br />
-</p>
-
-<p>
+<br />
 10 minutos.<br />
 Caco, o sapo, suspirando, tenta rodar mais uma vez&#x2026; e nenhum caso teste é aceito.<br />
-</p>
-
-<p>
+<br />
 5 minutos.<br />
 Como reverter? Como voltar a trás?<br />
 E se ele pudesse fazer tudo diferente?<br />
 Caco, o sapo, não sabe mais como desfazer suas mudanças.<br />
-</p>
-
-<p>
+<br />
 Caco, o sapo, senta e observa seus últimos segundos escorrerem pelos seus dedos.<br />
 Só resta-lhe abrir o site da DAC.<br />
 </p>
-</blockquote>
 
 <p>
 Git é uma ferramenta que se dispõe a resolver isso via sua estrutura.
@@ -329,12 +319,12 @@ Git é uma ferramenta que se dispõe a resolver isso via sua estrutura.
 </div>
 </div>
 
-<div id="outline-container-orgb052291" class="outline-2">
-<h2 id="orgb052291"><span class="section-number-2">5.</span> Worklog</h2>
+<div id="outline-container-orga2c0019" class="outline-2">
+<h2 id="orga2c0019"><span class="section-number-2">5.</span> Worklog</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org3685a0a" class="outline-3">
-<h3 id="org3685a0a"><span class="section-number-3">5.1.</span> Reunião, segunda, 02 de maio.</h3>
+<div id="outline-container-orge9f14ca" class="outline-3">
+<h3 id="orge9f14ca"><span class="section-number-3">5.1.</span> Reunião, segunda, 02 de maio.</h3>
 <div class="outline-text-3" id="text-5-1">
 <p>
 topicos da palestra :
@@ -367,13 +357,13 @@ ex : tentar juntar commits e resolver conflitos vb
 </div>
 </div>
 
-<div id="outline-container-org9ec8280" class="outline-2">
-<h2 id="org9ec8280"><span class="section-number-2">6.</span> Referências</h2>
+<div id="outline-container-org82a46ca" class="outline-2">
+<h2 id="org82a46ca"><span class="section-number-2">6.</span> Referências</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Ieremies Vieira da Fonseca Romero</p>
-<p class="date">Created: 2022-05-03 ter 14:31</p>
+<p class="date">Created: 2022-05-03 ter 14:48</p>
 </div>
 </body>
 </html>
