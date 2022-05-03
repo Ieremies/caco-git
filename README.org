@@ -1,5 +1,7 @@
 #+Title: Caco GIT
 
+#+setupfile: ~/bin/org-themes/src/readtheorg_inline/readtheorg_inline.theme
+
 Mini curso ministrado pelo Centro Acadêmico da Computação aos alunos da UNICAMP aprofundando seus conhecimentos em =git=.
 
 * Público alvo
@@ -11,6 +13,11 @@ Vale ressaltar que, apesar desse ser o nosso público alvo, o curso não está l
 O curso tem como objetivo construir encima do conhecimento do aluno adquirido para submissão de laboratórios. Entende-se que, muitos desses alunos utilizam a receita pronta disponibilizada pelos professores e monitores e que ainda faltam-lhes noções do que acontece "de baixo do pano".
 
 Assim, esse curso, focando nos casos de uso que julgamos serem comuns aos alunos nessa fase, almeja ampliar a compreensão do sistema =git= como uma ferramenta a auxiliar durante sua graduação.
+* Proposta inicial
+- Data :: Semana do dia 16 de Maio (semana seguinte ao Install Fest de Linux do LKCamp)
+- Hora :: Idealmente perto das 18hrs, a atender a EC e CC.
+- Local :: Laboratório do IC
+- Duração :: 1 a 1.5 horas
 
 * Casos de uso
 ** Reverter o arquivo a estado anterior.
@@ -18,27 +25,27 @@ Assim, esse curso, focando nos casos de uso que julgamos serem comuns aos alunos
 Durante o desenvolvimento de trabalhos e projetos, é comum que seja necessário reverter certas mudanças que acabaram gerando erros ou mais problemas.
 
 #+begin_quote
-São 11 da noite de um domingo.
-Caco, o sapo, possui um laboratório de MC102 para entregar em uma hora.
-Caco, o sapo, está nervoso. Seu código não roda.
-"FINALMENTE!", grita Caco, o sapo, quebrando o silêncio frio da noite.
-Seu código roda! Cinco testes de dez.
-"Cinco bola dez", conforma-se Caco, o sapo.
+São 11 da noite de um domingo. \\
+Caco, o sapo, possui um laboratório de MC102 para entregar em uma hora.\\
+Caco, o sapo, está nervoso. Seu código não roda.\\
+"FINALMENTE!", grita Caco, o sapo, quebrando o silêncio frio da noite.\\
+Seu código roda! Cinco testes de dez.\\
+"Cinco bola dez", conforma-se Caco, o sapo.\\
 
-30 minutos.
-Hora da corrida final, Caco, o sapo, ainda sonha com a bolsa FAPESP.
-Caco, o sapo, desesperadamente tenta os últimos testes.
+30 minutos.\\
+Hora da corrida final, Caco, o sapo, ainda sonha com a bolsa FAPESP.\\
+Caco, o sapo, desesperadamente tenta os últimos testes.\\
 
-10 minutos.
-Caco, o sapo, suspirando, tenta rodar mais uma vez... e nenhum caso teste é aceito.
+10 minutos.\\
+Caco, o sapo, suspirando, tenta rodar mais uma vez... e nenhum caso teste é aceito.\\
 
-5 minutos.
-Como reverter? Como voltar a trás?
-E se ele pudesse fazer tudo diferente?
-Caco, o sapo, não sabe mais como desfazer suas mudanças.
+5 minutos.\\
+Como reverter? Como voltar a trás?\\
+E se ele pudesse fazer tudo diferente?\\
+Caco, o sapo, não sabe mais como desfazer suas mudanças.\\
 
-Caco, o sapo, senta e observa seus últimos segundos escorrerem pelos seus dedos.
-Só resta-lhe abrir o site da DAC.
+Caco, o sapo, senta e observa seus últimos segundos escorrerem pelos seus dedos.\\
+Só resta-lhe abrir o site da DAC.\\
 #+end_quote
 
 Git é uma ferramenta que se dispõe a resolver isso via sua estrutura.
@@ -50,15 +57,15 @@ Git é uma ferramenta que se dispõe a resolver isso via sua estrutura.
 topicos da palestra :
 - comandos basicos de terminal : mkdir, ls, cd, rm,
 - git:
--- explica sobre commits branchs
+  - explica sobre commits branchs
 ex: reverter ao momento que o arquivo estava melhor
 trabahar com o git sem precisar estar na main
--- resolver conflito
+ - resolver conflito
 ex : tentar juntar commits e resolver conflitos vb
  git rebase -i
--- git add.
--- git commit
--- git
--- branch model / git flow
+ - git add.
+ - git commit
+ - git
+ - branch model / git flow
 
 * Referências
