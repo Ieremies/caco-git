@@ -15,12 +15,28 @@ O curso tem como objetivo construir encima do conhecimento do aluno adquirido pa
 
 Assim, esse curso, focando nos casos de uso que julgamos serem comuns aos alunos nessa fase, almeja ampliar a compreensão do sistema =git= como uma ferramenta a auxiliar durante sua graduação.
 * Proposta inicial
-- Data :: Semana do dia 16 de Maio (semana seguinte ao Install Fest de Linux do LKCamp)
-- Hora :: Idealmente perto das 18hrs, a atender a EC e CC.
-- Local :: Laboratório do IC
-- Duração :: 1 a 1.5 horas
+- Data :: 18 de maio
+- Hora :: 17hrs
+- Local :: Laboratório do IC (303, a confirmar)
+- Duração :: 1 hora.
 
 * Casos de uso
+** Revisar comandos do git e de terminal
+Vamos começar criando uma parta para trabalharmos.
+#+begin_bash
+ls
+mkdir workshop-git
+cd workshop-git
+ls
+#+end_bash
+
+Comandos básicos de git:
+- git clone / init
+- git status
+- git add
+- git commit
+- git push
+- git pull
 ** Reverter o arquivo a estado anterior.
 
 Durante o desenvolvimento de trabalhos e projetos, é comum que seja necessário reverter certas mudanças que acabaram gerando erros ou mais problemas.
@@ -51,7 +67,30 @@ Só resta-lhe abrir o site da DAC.
 
 Git é uma ferramenta que se dispõe a resolver isso via sua estrutura.
 
+# TODO Comentar sobre a estrutura interna do git em blobs.
+
 # TODO Precisa elaborar mais sobre esse tópico
+** Branchs
+
+#+begin_verbatin
+Caco o sapo aprendeu sua lição.
+Toda vez que ele quer fazer uma alteração no seu código ele não o faz na main branch.
+Ele cria uma nova branch
+#+end_verbatin
+
+- Como criar branchs.
+- Como dar commit em branchs.
+- Como mudar de branch.
+- Como juntar branchs
+- Remoto vs local
+- Comentar sobre as flags de resolução de conflitos <<< eles tem muitas error quando o prof faz mudanças no remoto
+- Como apagar/renomear branchs
+* Divulgação
+
+** TODO Mandar email na lista da grad
+Uma email <2022-05-09 seg> e um no dia <2022-05-16 seg>
+** TODO Post no instagram
+-  [ ] Arte
 
 * Worklog
 ** Reunião, segunda, 02 de maio.
