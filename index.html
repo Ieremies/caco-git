@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt">
 <head>
-<!-- 2022-05-03 ter 14:48 -->
+<!-- 2022-05-09 seg 18:07 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Caco GIT</title>
@@ -219,20 +219,28 @@ $(function() {    $('.note').before("<p class='admonition-title note'>Note</p>")
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org55b64bd">1. Público alvo</a></li>
-<li><a href="#org9ad5121">2. Objetivo</a></li>
-<li><a href="#org3d73606">3. Proposta inicial</a></li>
-<li><a href="#org872643f">4. Casos de uso</a>
+<li><a href="#orge49383f">1. Público alvo</a></li>
+<li><a href="#orgc367f3f">2. Objetivo</a></li>
+<li><a href="#org9888d59">3. Proposta inicial</a></li>
+<li><a href="#org002a0b6">4. Casos de uso</a>
 <ul>
-<li><a href="#orgcbe64ad">4.1. Reverter o arquivo a estado anterior.</a></li>
+<li><a href="#orgfcd880d">4.1. Revisar comandos do git e de terminal</a></li>
+<li><a href="#orga419fea">4.2. Reverter o arquivo a estado anterior.</a></li>
+<li><a href="#org55451d2">4.3. Branchs</a></li>
 </ul>
 </li>
-<li><a href="#orga2c0019">5. Worklog</a>
+<li><a href="#org508e58c">5. Divulgação</a>
 <ul>
-<li><a href="#orge9f14ca">5.1. Reunião, segunda, 02 de maio.</a></li>
+<li><a href="#org314f272">5.1. Mandar email na lista da grad</a></li>
+<li><a href="#org3c0d3de">5.2. Post no instagram</a></li>
 </ul>
 </li>
-<li><a href="#org82a46ca">6. Referências</a></li>
+<li><a href="#org26a0d73">6. Worklog</a>
+<ul>
+<li><a href="#orgb488205">6.1. Reunião, segunda, 02 de maio.</a></li>
+</ul>
+</li>
+<li><a href="#orgc7f3127">7. Referências</a></li>
 </ul>
 </div>
 </div>
@@ -240,8 +248,8 @@ $(function() {    $('.note').before("<p class='admonition-title note'>Note</p>")
 Mini curso ministrado pelo Centro Acadêmico da Computação aos alunos da UNICAMP aprofundando seus conhecimentos em <code>git</code>.
 </p>
 
-<div id="outline-container-org55b64bd" class="outline-2">
-<h2 id="org55b64bd"><span class="section-number-2">1.</span> Público alvo</h2>
+<div id="outline-container-orge49383f" class="outline-2">
+<h2 id="orge49383f"><span class="section-number-2">1.</span> Público alvo</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Esse mini curso tem como foco o aluno de Computação em seu primeiro semestre, o tal está a cursar MC102 que exige a submissão de laboratórios de programação via GitLab.
@@ -253,8 +261,8 @@ Vale ressaltar que, apesar desse ser o nosso público alvo, o curso não está l
 </div>
 </div>
 
-<div id="outline-container-org9ad5121" class="outline-2">
-<h2 id="org9ad5121"><span class="section-number-2">2.</span> Objetivo</h2>
+<div id="outline-container-orgc367f3f" class="outline-2">
+<h2 id="orgc367f3f"><span class="section-number-2">2.</span> Objetivo</h2>
 <div class="outline-text-2" id="text-2">
 <p>
 O curso tem como objetivo construir encima do conhecimento do aluno adquirido para submissão de laboratórios. Entende-se que, muitos desses alunos utilizam a receita pronta disponibilizada pelos professores e monitores e que ainda faltam-lhes noções do que acontece "de baixo do pano".
@@ -265,25 +273,54 @@ Assim, esse curso, focando nos casos de uso que julgamos serem comuns aos alunos
 </p>
 </div>
 </div>
-<div id="outline-container-org3d73606" class="outline-2">
-<h2 id="org3d73606"><span class="section-number-2">3.</span> Proposta inicial</h2>
+<div id="outline-container-org9888d59" class="outline-2">
+<h2 id="org9888d59"><span class="section-number-2">3.</span> Proposta inicial</h2>
 <div class="outline-text-2" id="text-3">
 <dl class="org-dl">
-<dt>Data</dt><dd>Semana do dia 16 de Maio (semana seguinte ao Install Fest de Linux do LKCamp)</dd>
-<dt>Hora</dt><dd>Idealmente perto das 18hrs, a atender a EC e CC.</dd>
-<dt>Local</dt><dd>Laboratório do IC</dd>
-<dt>Duração</dt><dd>1 a 1.5 horas</dd>
+<dt>Data</dt><dd>18 de maio</dd>
+<dt>Hora</dt><dd>17hrs</dd>
+<dt>Local</dt><dd>Laboratório do IC (303, a confirmar)</dd>
+<dt>Duração</dt><dd>1 hora.</dd>
 </dl>
 </div>
 </div>
 
-<div id="outline-container-org872643f" class="outline-2">
-<h2 id="org872643f"><span class="section-number-2">4.</span> Casos de uso</h2>
+<div id="outline-container-org002a0b6" class="outline-2">
+<h2 id="org002a0b6"><span class="section-number-2">4.</span> Casos de uso</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-orgcbe64ad" class="outline-3">
-<h3 id="orgcbe64ad"><span class="section-number-3">4.1.</span> Reverter o arquivo a estado anterior.</h3>
+<div id="outline-container-orgfcd880d" class="outline-3">
+<h3 id="orgfcd880d"><span class="section-number-3">4.1.</span> Revisar comandos do git e de terminal</h3>
 <div class="outline-text-3" id="text-4-1">
+<p>
+Vamos começar criando uma parta para trabalharmos.
+</p>
+<div class="bash" id="org465753f">
+<p>
+ls
+mkdir workshop-git
+cd workshop-git
+ls
+</p>
+
+</div>
+
+<p>
+Comandos básicos de git:
+</p>
+<ul class="org-ul">
+<li>git clone / init</li>
+<li>git status</li>
+<li>git add</li>
+<li>git commit</li>
+<li>git push</li>
+<li>git pull</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orga419fea" class="outline-3">
+<h3 id="orga419fea"><span class="section-number-3">4.2.</span> Reverter o arquivo a estado anterior.</h3>
+<div class="outline-text-3" id="text-4-2">
 <p>
 Durante o desenvolvimento de trabalhos e projetos, é comum que seja necessário reverter certas mudanças que acabaram gerando erros ou mais problemas.
 </p>
@@ -317,15 +354,59 @@ Git é uma ferramenta que se dispõe a resolver isso via sua estrutura.
 </p>
 </div>
 </div>
+<div id="outline-container-org55451d2" class="outline-3">
+<h3 id="org55451d2"><span class="section-number-3">4.3.</span> Branchs</h3>
+<div class="outline-text-3" id="text-4-3">
+<div class="verbatin" id="orge3c5038">
+<p>
+Caco o sapo aprendeu sua lição.
+Toda vez que ele quer fazer uma alteração no seu código ele não o faz na main branch.
+Ele cria uma nova branch
+</p>
+
 </div>
 
-<div id="outline-container-orga2c0019" class="outline-2">
-<h2 id="orga2c0019"><span class="section-number-2">5.</span> Worklog</h2>
+<ul class="org-ul">
+<li>Como criar branchs.</li>
+<li>Como dar commit em branchs.</li>
+<li>Como mudar de branch.</li>
+<li>Como juntar branchs</li>
+<li>Remoto vs local</li>
+<li>Comentar sobre as flags de resolução de conflitos &lt;&lt;&lt; eles tem muitas error quando o prof faz mudanças no remoto</li>
+<li>Como apagar/renomear branchs</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-org508e58c" class="outline-2">
+<h2 id="org508e58c"><span class="section-number-2">5.</span> Divulgação</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-orge9f14ca" class="outline-3">
-<h3 id="orge9f14ca"><span class="section-number-3">5.1.</span> Reunião, segunda, 02 de maio.</h3>
+<div id="outline-container-org314f272" class="outline-3">
+<h3 id="org314f272"><span class="section-number-3">5.1.</span> Mandar email na lista da grad</h3>
 <div class="outline-text-3" id="text-5-1">
+<p>
+Uma email <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-05-09 seg&gt; </span></span> e um no dia <span class="timestamp-wrapper"><span class="timestamp">&lt;2022-05-16 seg&gt;</span></span>
+</p>
+</div>
+</div>
+<div id="outline-container-org3c0d3de" class="outline-3">
+<h3 id="org3c0d3de"><span class="section-number-3">5.2.</span> Post no instagram</h3>
+<div class="outline-text-3" id="text-5-2">
+<ul class="org-ul">
+<li class="off"><code>[&#xa0;]</code> Arte</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org26a0d73" class="outline-2">
+<h2 id="org26a0d73"><span class="section-number-2">6.</span> Worklog</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+<div id="outline-container-orgb488205" class="outline-3">
+<h3 id="orgb488205"><span class="section-number-3">6.1.</span> Reunião, segunda, 02 de maio.</h3>
+<div class="outline-text-3" id="text-6-1">
 <p>
 topicos da palestra :
 </p>
@@ -357,13 +438,13 @@ ex : tentar juntar commits e resolver conflitos vb
 </div>
 </div>
 
-<div id="outline-container-org82a46ca" class="outline-2">
-<h2 id="org82a46ca"><span class="section-number-2">6.</span> Referências</h2>
+<div id="outline-container-orgc7f3127" class="outline-2">
+<h2 id="orgc7f3127"><span class="section-number-2">7.</span> Referências</h2>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Ieremies Vieira da Fonseca Romero</p>
-<p class="date">Created: 2022-05-03 ter 14:48</p>
+<p class="date">Created: 2022-05-09 seg 18:07</p>
 </div>
 </body>
 </html>
